@@ -35,7 +35,7 @@ const metaData: QandA1[] = [
     answer:
       "HTML, CSS, JAVASCRIPT, TYPESCRIPT, REACTJS, NODEJS, EXPRESS JS, MYSQL, JAVA, POSTGRESQL",
     bc: "Expertise and Interest",
-    linkTo: "/aboutme",
+    linkTo: "/about",
   },
   {
     question: " Everhome Realty (In Progress)",

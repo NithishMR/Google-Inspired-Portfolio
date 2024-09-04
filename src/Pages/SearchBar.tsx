@@ -1,40 +1,46 @@
-import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  KeyboardEvent,
+  MouseEvent,
+} from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 interface SandA {
   suggest: string;
   linkTo: string;
 }
 
-const SuggestAndLink: SandA[] = [
-  {
-    suggest: "Everything about me",
-    linkTo: "/all",
-  },
-  {
-    suggest: "About me",
-    linkTo: "/aboutMe",
-  },
-  {
-    suggest: "Projects",
-    linkTo: "/projects",
-  },
-  {
-    suggest: "Images",
-    linkTo: "/images",
-  },
-  {
-    suggest: "Social",
-    linkTo: "/social",
-  },
+const SuggestAndLink1: SandA[] = [
+  { suggest: "Everything about me", linkTo: "/all" },
+  { suggest: "About me", linkTo: "/about" },
+  { suggest: "Projects", linkTo: "/projects" },
+  { suggest: "Images", linkTo: "/images" },
+  { suggest: "Social", linkTo: "/social" },
 ];
 
-function SearchBar() {
-  const [isSuggestionVisible, setIsSuggestionVisible] = useState(false);
+const SearchBar: React.FC = () => {
+  const navigate = useNavigate();
+  const [inputValue, setInputValue] = useState<string>("");
+  const [suggestAndLink, setSuggestAndLink] =
+    useState<SandA[]>(SuggestAndLink1);
+  const [isSuggestionVisible, setIsSuggestionVisible] =
+    useState<boolean>(false);
   const searchRef = useRef<HTMLDivElement>(null);
 
   const showSuggestions = () => {
     setIsSuggestionVisible(!isSuggestionVisible);
+  };
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Prevent default behavior (e.g., form submission)
+      console.log("Enter key pressed");
+      if (inputValue) {
+        navigate(`/${inputValue}`);
+      }
+    }
   };
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -47,11 +53,29 @@ function SearchBar() {
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
+    // Use type assertion to specify the type of the event
+    const handleClickOutsideTyped = (event: Event) =>
+      handleClickOutside(event as unknown as MouseEvent);
+
+    document.addEventListener(
+      "mousedown",
+      handleClickOutsideTyped as EventListener
+    );
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener(
+        "mousedown",
+        handleClickOutsideTyped as EventListener
+      );
     };
   }, []);
+
+  // const addElement = (element: SandA) => {
+  //   setSuggestAndLink((prev) => [...prev, element]);
+  // };
+
+  const removeElement = (index: number) => {
+    setSuggestAndLink((prev) => prev.filter((_, i) => i !== index));
+  };
 
   return (
     <div ref={searchRef} className="search-container mt-8">
@@ -77,36 +101,54 @@ function SearchBar() {
               isSuggestionVisible ? "rounded-r-none" : ""
             }`}
             onClick={showSuggestions}
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            onKeyDown={handleKeyDown}
+            autoComplete="off"
           />
         </label>
       </div>
       <div
-        className={`suggestion-container ${
-          isSuggestionVisible ? "block" : "hidden"
-        } mx-auto text-start w-[560px] border border-gray-500 mt-5`}
+        className={`border-custom suggestion-container ${
+          isSuggestionVisible && suggestAndLink.length > 0 ? "block" : "hidden"
+        } mx-auto text-start w-[560px] border border-gray-500 mt-5 p-2`}
       >
         <div className="suggestions mt-2 mr-12">
-          {SuggestAndLink.map((item, index) => (
+          {suggestAndLink.map((item, index) => (
             <div
               key={index}
-              className="element-container flex items-center py-2"
+              className="flex flex-row justify-between items-center"
             >
-              <img
-                className="history-image mr-4 ml-1"
-                src="../src/assets/history.svg"
-                alt="history"
-              />
-              <p className="elements">
-                <Link to={item.linkTo} className="text-blue-500 no-underline">
-                  {item.suggest}
-                </Link>
-              </p>
+              <div className="element-container flex items-center py-2">
+                <img
+                  className="history-image mr-4 ml-1"
+                  src="../src/assets/history.svg"
+                  alt="history"
+                />
+                <p className="elements">
+                  <Link to={item.linkTo} className="text-blue-500 no-underline">
+                    {item.suggest}
+                  </Link>
+                </p>
+              </div>
+              <div>
+                <div className="flex flex-row items-center justify-between">
+                  <button type="button" onClick={() => removeElement(index)}>
+                    Remove
+                    <img
+                      className="inline-block"
+                      src="../src/assets/close.svg"
+                      alt="close button"
+                    />
+                  </button>
+                </div>
+              </div>
             </div>
           ))}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default SearchBar;

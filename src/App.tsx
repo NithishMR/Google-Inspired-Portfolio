@@ -15,7 +15,7 @@ function App() {
         <Route path="/all" element={<About />} />
         <Route path="/social" element={<Social />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/about" element={<AboutMe />} />
         <Route path="/checking" element={<MultiTabs />} />
       </Routes>
     </>
