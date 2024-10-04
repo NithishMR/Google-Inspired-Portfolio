@@ -1,5 +1,4 @@
 import AllMetaDescription from "./AllMetaDescription";
-import NewSearch from "./NewSearch";
 
 interface QandA1 {
   question: string;
@@ -27,7 +26,6 @@ function AboutMe() {
   return (
     <>
       <div className="">
-        <NewSearch />
         <div className="">
           <AllMetaDescription data={metaData} />
         </div>

@@ -12,7 +12,7 @@ function MultiTabs() {
             <TabsTrigger value="News">News</TabsTrigger>
           </TabsList>
           <TabsContent value="All"></TabsContent>
-          <TabsContent value="Projects"></TabsContent>
+          <TabsContent value="Projects">Projects</TabsContent>
           <TabsContent value="Images"></TabsContent>
           <TabsContent value="News"></TabsContent>
         </Tabs>

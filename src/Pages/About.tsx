@@ -1,7 +1,6 @@
 import Accord from "./Accord";
 import AllMetaDescription from "./AllMetaDescription";
 import MetaDescription from "./MetaDescription";
-import NewSearch from "./NewSearch";
 
 interface QandA {
   question: string;
@@ -92,7 +91,6 @@ const metaData1: QandA1[] = [
 function About() {
   return (
     <>
-      <NewSearch />
       <div className="">
         <div className="w-[70%] m-auto pt-4 pb-2">
           <div className="text-base text-gray-400">

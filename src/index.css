@@ -69,4 +69,7 @@
   .border-custom {
     border-radius: 10px;
   }
+  .setBackground {
+    background-image: url("../src/assets/background1.jpg");
+  }
 }
