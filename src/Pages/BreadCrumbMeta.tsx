@@ -28,7 +28,7 @@ const BreadCrumbMeta: React.FC<MetaDescriptionProps> = ({ data }) => {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">
+            <BreadcrumbLink href="/">
               https://googleInspiredPortfolio.NithishMR.com
             </BreadcrumbLink>
           </BreadcrumbItem>

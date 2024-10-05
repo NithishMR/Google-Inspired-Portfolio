@@ -17,7 +17,9 @@ const AllMetaDescription: React.FC<MetaDescriptionProps> = ({ data }) => {
       {data.map((item, index) => (
         <div className="w-[70%] m-auto py-3" key={index}>
           <BreadCrumbMeta data={item} />
-          <div className="text-xl py-2 text-blue-600">{item.question}</div>
+          <a href={item.linkTo} target="_blank" rel="noopener noreferrer">
+            <div className="text-xl py-2 text-blue-600">{item.question}</div>
+          </a>
           <div className="text-justify text-base text-gray-600">
             {item.answer}
           </div>

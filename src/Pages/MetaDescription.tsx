@@ -4,6 +4,7 @@ interface MetaDescription {
   question: string;
   answer: string;
   bc: string;
+  linkTo: string;
 }
 
 interface MetaDescriptionProps {

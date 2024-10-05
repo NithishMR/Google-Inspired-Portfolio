@@ -62,7 +62,7 @@ const metaData: QandA1[] = [
     answer:
       "A project created using HTML and CSS, replicating the core design and layout of YouTube. Features a static interface with simulated video browsing.",
     bc: "YouTube Clone",
-    linkTo: "https://github.com/NithishMR/YoutubeClone",
+    linkTo: "https://nithishmr.github.io/YoutubeClone/",
   },
   {
     question: "LinkedIn",
@@ -85,7 +85,7 @@ const metaData1: QandA1[] = [
     answer:
       " An enthusiastic student deeply passionate about software development, eager to contribute my evolving skills and enthusiasm to the dynamic field of technology, determined to reach new heights in both my academic pursuits and professional endeavors.",
     bc: "about",
-    linkTo: "/aboutme",
+    linkTo: "/about",
   },
 ];
 function About() {
