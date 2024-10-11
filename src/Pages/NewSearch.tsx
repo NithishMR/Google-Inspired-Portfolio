@@ -9,11 +9,7 @@ function NewSearch() {
           <div className="flex justify-between items-center mb-4">
             {/* Logo */}
             <div className="flex items-center">
-              <img
-                src="../src/assets/google_logo.svg"
-                alt="Logo"
-                className="h-8"
-              />
+              <img src="../src/assets/copy1.png" alt="Logo" className="h-8" />
               {/* <span className="text-2xl font-bold text-blue-500">Enjeck</span> */}
             </div>
 

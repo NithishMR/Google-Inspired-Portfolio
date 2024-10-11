@@ -8,7 +8,7 @@ function FrontPage() {
         <div className="logo flex justify-center items-center mt-36">
           <img
             id="google_logo"
-            src="../src/assets/google_logo.svg"
+            src="../src/assets/copy1.png"
             alt="google_logo"
             className="mx-auto"
           />
