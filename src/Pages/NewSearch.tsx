@@ -1,4 +1,4 @@
-import MultiTabs from "./MultiTabs";
+// import MultiTabs from "./MultiTabs";
 import SearchBar from "./SearchBar";
 function NewSearch() {
   return (
@@ -28,7 +28,7 @@ function NewSearch() {
           </div>
 
           {/* Navigation Section */}
-          <MultiTabs />
+          {/* <MultiTabs /> */}
         </div>
       </div>
     </>

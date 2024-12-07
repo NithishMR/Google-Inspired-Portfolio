@@ -13,8 +13,7 @@ interface SandA {
 }
 
 const SuggestAndLink1: SandA[] = [
-  { suggest: "Everything about me", linkTo: "/all" },
-  { suggest: "About me", linkTo: "/about" },
+  { suggest: "About me", linkTo: "/all" },
   { suggest: "Projects", linkTo: "/projects" },
   { suggest: "Images", linkTo: "/images" },
   { suggest: "Social", linkTo: "/social" },

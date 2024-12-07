@@ -43,13 +43,13 @@ const metaData: QandA1[] = [
     bc: "Everhome Realty",
     linkTo: "https://github.com/NithishMR/EverHome",
   },
-  {
-    question: "Random Quote Generator",
-    answer:
-      "Personal project using React. Features dynamic content rendering with randomized quotes, text colors, and background colors on button clicks. Includes responsive design and user-friendly interface.",
-    bc: "Random Quote Generator",
-    linkTo: "https://github.com/NithishMR/QuoteApp-React",
-  },
+  // {
+  //   question: "Random Quote Generator",
+  //   answer:
+  //     "Personal project using React. Features dynamic content rendering with randomized quotes, text colors, and background colors on button clicks. Includes responsive design and user-friendly interface.",
+  //   bc: "Random Quote Generator",
+  //   linkTo: "https://github.com/NithishMR/QuoteApp-React",
+  // },
   {
     question: "Pokémon Name Finder",
     answer:
