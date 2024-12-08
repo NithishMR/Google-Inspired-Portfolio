@@ -112,34 +112,39 @@ const SearchBar: React.FC = () => {
           isSuggestionVisible && suggestAndLink.length > 0 ? "block" : "hidden"
         } mx-auto text-start w-[560px] border border-gray-500 mt-5 p-2`}
       >
-        <div className="suggestions mt-2 mr-12">
+        <div className="suggestions my-2">
           {suggestAndLink.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-row justify-between items-center"
-            >
-              <div className="element-container flex items-center py-2">
-                <img
-                  className="history-image mr-4 ml-1"
-                  src="../src/assets/history.svg"
-                  alt="history"
-                />
-                <p className="elements">
-                  <Link to={item.linkTo} className="text-blue-500 no-underline">
-                    {item.suggest}
-                  </Link>
-                </p>
-              </div>
-              <div>
-                <div className="flex flex-row items-center justify-between">
-                  <button type="button" onClick={() => removeElement(index)}>
-                    Remove
-                    <img
-                      className="inline-block"
-                      src="../src/assets/close.svg"
-                      alt="close button"
-                    />
-                  </button>
+            <div className="hover:bg-[#f3f1f1] rounded-md">
+              <div
+                key={index}
+                className="flex flex-row justify-between items-center  mx-4 "
+              >
+                <div className="element-container flex items-center py-2">
+                  <img
+                    className="history-image mr-4 ml-1"
+                    src="../src/assets/history.svg"
+                    alt="history"
+                  />
+                  <p className="elements">
+                    <Link
+                      to={item.linkTo}
+                      className="text-blue-500 no-underline"
+                    >
+                      {item.suggest}
+                    </Link>
+                  </p>
+                </div>
+                <div>
+                  <div className="flex flex-row items-center justify-between hover:text-blue-600">
+                    <button type="button" onClick={() => removeElement(index)}>
+                      Remove
+                      <img
+                        className="inline-block"
+                        src="../src/assets/close.svg"
+                        alt="close button"
+                      />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
