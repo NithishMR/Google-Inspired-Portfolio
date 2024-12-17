@@ -1,34 +1,43 @@
 // import MultiTabs from "./MultiTabs";
 import SearchBar from "./SearchBar";
+import { CircleUser } from "lucide-react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 function NewSearch() {
   return (
     <>
       <div className="">
         <div className="w-full p-4 border-b-[1px] border-gray-400">
-          {/* Top Section with Logo, Search Bar, and Icons */}
           <div className="flex justify-between items-center mb-4">
-            {/* Logo */}
             <div className="flex items-center">
               <img src="../src/assets/copy1.png" alt="Logo" className="h-8" />
-              {/* <span className="text-2xl font-bold text-blue-500">Enjeck</span> */}
+            </div>
+            <div className="ml-[-24px]">
+              <SearchBar />
             </div>
 
-            {/* Search Bar */}
-            <SearchBar />
-
-            {/* Icons */}
             <div className="flex items-center space-x-4">
-              <i className="fas fa-th"></i>
-              <img
-                src="../src/assets/Apps.svg"
-                alt="Profile"
-                className="h-8 w-8 rounded-full"
-              />
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <div className="cursor-pointer">
+                      <CircleUser color="gray" size={28} />
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <div className="flex flex-col items-center justify-center">
+                      <div className="">Nithish MR</div>
+                      <div className="">nithishmr004@gmail.com</div>
+                    </div>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </div>
           </div>
-
-          {/* Navigation Section */}
-          {/* <MultiTabs /> */}
         </div>
       </div>
     </>

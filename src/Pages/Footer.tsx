@@ -13,7 +13,7 @@ function Footer() {
             <li>
               <Link
                 to="/about"
-                className="text-gray-700 hover:text-gray-900 font-semibold transition duration-200"
+                className="text-gray-700 hover:text-gray-900 font-semibold transition duration-200 hover:underline"
               >
                 About
               </Link>
@@ -21,7 +21,7 @@ function Footer() {
             <li>
               <Link
                 to="/projects"
-                className="text-gray-700 hover:text-gray-900 font-semibold transition duration-200"
+                className="text-gray-700 hover:text-gray-900 font-semibold transition duration-200 hover:underline"
               >
                 Projects
               </Link>
@@ -29,7 +29,7 @@ function Footer() {
             <li>
               <a
                 href="#blog"
-                className="text-gray-700 hover:text-gray-900 font-semibold transition duration-200"
+                className="text-gray-700 hover:text-gray-900 font-semibold transition duration-200 hover:underline"
               >
                 Blog
               </a>
@@ -43,7 +43,7 @@ function Footer() {
                 href="https://github.com/NithishMR/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 hover:text-gray-900 font-semibold transition duration-200"
+                className="text-gray-700 hover:text-gray-900 font-semibold transition duration-200 hover:underline"
               >
                 GitHub
               </a>
@@ -51,7 +51,7 @@ function Footer() {
             <li>
               <a
                 href="mailto:nithishmr004@gmail.com"
-                className="text-gray-700 hover:text-gray-900 font-semibold transition duration-200"
+                className="text-gray-700 hover:text-gray-900 font-semibold transition duration-200 hover:underline"
               >
                 Email
               </a>

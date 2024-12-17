@@ -77,7 +77,7 @@ const SearchBar: React.FC = () => {
   };
 
   return (
-    <div ref={searchRef} className="search-container mt-8">
+    <div ref={searchRef} className="search-container items-center">
       <div className="search-area flex justify-center items-center">
         <label htmlFor="search-about-me" className="flex items-center">
           <button

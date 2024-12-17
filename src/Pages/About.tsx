@@ -30,6 +30,14 @@ const aboutData: QandA[] = [
 ];
 const metaData: QandA1[] = [
   {
+    question:
+      "Armtech Computers Services Pvt. Ltd. – Alandur, Chennai (Dec 2023 – Jan 2024)",
+    answer:
+      "Acquired hands-on experience in hardware diagnostics and OS installations, ensuring optimal performance of RAM, SSD, HDD, and Windows systems",
+    bc: "Experience",
+    linkTo: "https://www.linkedin.com/in/nithishmr/",
+  },
+  {
     question: "My Technical Expertise and Areas of Interest",
     answer:
       "HTML, CSS, JAVASCRIPT, TYPESCRIPT, REACTJS, NODEJS, EXPRESS JS, MYSQL, JAVA, POSTGRESQL",
