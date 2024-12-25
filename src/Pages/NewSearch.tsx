@@ -1,12 +1,11 @@
 // import MultiTabs from "./MultiTabs";
+import AccountDetails from "./AccountDetails";
 import SearchBar from "./SearchBar";
-import { CircleUser } from "lucide-react";
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 function NewSearch() {
   return (
     <>
@@ -21,21 +20,20 @@ function NewSearch() {
             </div>
 
             <div className="flex items-center space-x-4">
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger>
-                    <div className="cursor-pointer">
-                      <CircleUser color="gray" size={28} />
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <div className="flex flex-col items-center justify-center">
-                      <div className="">Nithish MR</div>
-                      <div className="">nithishmr004@gmail.com</div>
-                    </div>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+              <Popover>
+                <PopoverTrigger>
+                  <div className="cursor-pointer">
+                    <img
+                      src="AshKetchum.jpeg"
+                      alt="profile picture"
+                      className="h-[45px] w-[45px] rounded-full"
+                    />
+                  </div>
+                </PopoverTrigger>
+                <PopoverContent className="w-[400px]">
+                  <AccountDetails />
+                </PopoverContent>
+              </Popover>
             </div>
           </div>
         </div>

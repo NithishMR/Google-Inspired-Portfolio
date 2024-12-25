@@ -1,12 +1,17 @@
 import Footer from "./Footer";
 import SearchBar from "./SearchBar";
-import { CircleUser } from "lucide-react";
+// import {
+//   Tooltip,
+//   TooltipContent,
+//   TooltipProvider,
+//   TooltipTrigger,
+// } from "@/components/ui/tooltip";
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import AccountDetails from "./AccountDetails";
 
 function FrontPage() {
   return (
@@ -24,7 +29,7 @@ function FrontPage() {
               <img src="../src/assets/Apps.svg" alt="apps" className="w-6" />
             </div> */}
 
-            <TooltipProvider>
+            {/* <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger>
                   <div className="cursor-pointer">
@@ -38,7 +43,22 @@ function FrontPage() {
                   </div>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider>
+            </TooltipProvider> */}
+
+            <Popover>
+              <PopoverTrigger>
+                <div className="cursor-pointer">
+                  <img
+                    src="AshKetchum.jpeg"
+                    alt="profile picture"
+                    className="h-[45px] w-[45px] rounded-full"
+                  />
+                </div>
+              </PopoverTrigger>
+              <PopoverContent className="w-[400px]">
+                <AccountDetails />
+              </PopoverContent>
+            </Popover>
           </div>
         </div>
       </div>
