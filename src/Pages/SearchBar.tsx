@@ -17,6 +17,7 @@ const SuggestAndLink1: SandA[] = [
   { suggest: "Projects", linkTo: "/projects" },
   { suggest: "Images", linkTo: "/images" },
   { suggest: "Social", linkTo: "/social" },
+  { suggest: "Experience", linkTo: "/experience" },
 ];
 
 const SearchBar: React.FC = () => {

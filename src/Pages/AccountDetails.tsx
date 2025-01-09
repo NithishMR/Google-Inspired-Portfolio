@@ -30,7 +30,7 @@ export default function AccountDetails() {
           </div>
         </div>
         {/* GitHub Button */}
-        <div className="border-gray-300 border-[1px] py-2 px-4 text-center rounded-xl shadow-md text-sm cursor-pointer hover:bg-gray-100">
+        <div className=" border-gray-300 border-[1px] py-2 px-10 text-center rounded-xl shadow-md text-sm cursor-pointer hover:bg-gray-100">
           GitHub
         </div>
         {/* Footer Links */}

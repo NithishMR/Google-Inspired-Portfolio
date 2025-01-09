@@ -8,6 +8,7 @@ import AboutMe from "./Pages/AboutMe";
 import MultiTabs from "./Pages/MultiTabs";
 import HeaderBar from "./Pages/HeaderBar";
 import NotFound from "./Pages/NotFound";
+import Experience from "./Pages/Experience";
 
 function App() {
   const location = useLocation(); // Get the current location
@@ -23,6 +24,7 @@ function App() {
         <Route path="/social" element={<Social />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<AboutMe />} />
+        <Route path="/experience" element={<Experience />} />
         <Route path="/checking" element={<MultiTabs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

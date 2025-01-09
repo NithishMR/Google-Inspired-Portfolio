@@ -33,9 +33,16 @@ const metaData: QandA1[] = [
     question:
       "Armtech Computers Services Pvt. Ltd. – Alandur, Chennai (Dec 2023 – Jan 2024)",
     answer:
-      "Acquired hands-on experience in hardware diagnostics and OS installations, ensuring optimal performance of RAM, SSD, HDD, and Windows systems",
+      "Worked as an intern, gaining hands-on experience in hardware diagnostics and OS installations, ensuring the optimal performance of RAM, SSD, HDD, and Windows systems",
     bc: "Experience",
     linkTo: "https://www.linkedin.com/in/nithishmr/",
+  },
+  {
+    question: "Resume",
+    answer:
+      "Click here to download my resume for more details about my qualifications and experience",
+    bc: "about",
+    linkTo: "./NithishMR.pdf",
   },
   {
     question: "My Technical Expertise and Areas of Interest",
