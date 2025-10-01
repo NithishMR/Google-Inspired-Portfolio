@@ -10,5 +10,4 @@ It showcases projects, social links, experience, and other personal details in a
 - Dynamic search suggestions with keyboard navigation.
 - Sticky footer with links to GitHub, LinkedIn, and email.
 - 404-style page with suggestions when content is not found.
-```bash
-git clone https://github.com/NithishMR/YourRepoName.git
+
