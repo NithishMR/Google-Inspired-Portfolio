@@ -1,7 +1,9 @@
 # NithishMR Portfolio
 
-A personal portfolio web application inspired by Google’s interface.  
-It showcases projects, social links, experience, and other personal details in a clean, responsive layout.
+Visit the website: https://9fe8aed1.google-inspired-portfolio.pages.dev/
+
+A personal portfolio website inspired by Google’s clean and minimal search interface.
+It highlights projects, experience, social links, and personal details in a responsive, modern layout.
 
 ## Features
 - Home page with search functionality and profile popover.
