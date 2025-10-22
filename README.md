@@ -1,6 +1,6 @@
 # NithishMR Portfolio
 
-Visit the website: https://9fe8aed1.google-inspired-portfolio.pages.dev/
+Visit the website: (https://google-inspired-portfolio.pages.dev/)
 
 A personal portfolio website inspired by Google’s clean and minimal search interface.
 It highlights projects, experience, social links, and personal details in a responsive, modern layout.
