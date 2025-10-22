@@ -9,7 +9,8 @@ interface SandA {
 }
 
 const initialSuggestions: SandA[] = [
-  { suggest: "About me", linkTo: "/all" },
+  { suggest: "All about me", linkTo: "/all" },
+  { suggest: "About me", linkTo: "/about" },
   { suggest: "Projects", linkTo: "/projects" },
   // { suggest: "Images", linkTo: "/images" },
   { suggest: "Social", linkTo: "/social" },

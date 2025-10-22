@@ -35,10 +35,10 @@ const BreadCrumbMeta: React.FC<MetaDescriptionProps> = ({ data }) => {
 
           <BreadcrumbItem>
             <Link
-              href="https://googleInspiredPortfolio.NithishMR.com"
+              href=" https://9fe8aed1.google-inspired-portfolio.pages.dev/"
               className="text-gray-500"
             >
-              https://googleInspiredPortfolio.NithishMR.com
+              https://9fe8aed1.google-inspired-portfolio.pages.dev/
             </Link>
           </BreadcrumbItem>
 
