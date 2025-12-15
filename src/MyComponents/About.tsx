@@ -118,7 +118,7 @@ export default function About() {
           About {metaData.length} Results (0.69 seconds)
         </div>
       </div>
-      <div className="w-[70%] m-auto pt-4 pb-2">
+      <div className="">
         <AIOverView />
       </div>
       {/* Intro / MetaDescription */}

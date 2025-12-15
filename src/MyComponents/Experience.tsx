@@ -36,7 +36,7 @@ export default function Experience() {
           About {metaData.length} Results (0.69 seconds)
         </div>
       </div>
-      <div className="w-[70%] m-auto ">
+      <div className="">
         <AIOverViewExperience />
       </div>
       {/* AllMetaDescription expects an array of objects */}

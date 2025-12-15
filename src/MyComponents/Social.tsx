@@ -40,7 +40,7 @@ export default function Social() {
           About {metaData.length} Results (0.69 seconds)
         </div>
       </div>
-      <div className="w-[70%] m-auto ">
+      <div className="">
         <AIOverViewSocial />
       </div>
       <div className="w-[70%] m-auto ">
