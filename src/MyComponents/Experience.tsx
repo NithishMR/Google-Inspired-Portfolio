@@ -1,5 +1,4 @@
-"use client";
-
+import AIOverViewExperience from "./AIOverViewAboutExperience";
 import AllMetaDescription from "./AllMetaDescription";
 
 interface QandA1 {
@@ -37,7 +36,9 @@ export default function Experience() {
           About {metaData.length} Results (0.69 seconds)
         </div>
       </div>
-
+      <div className="w-[70%] m-auto ">
+        <AIOverViewExperience />
+      </div>
       {/* AllMetaDescription expects an array of objects */}
       <div className="w-[70%] m-auto ">
         <AllMetaDescription data={metaData} />

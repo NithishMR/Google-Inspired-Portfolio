@@ -1,3 +1,4 @@
+import AIOverViewAboutProjects from "./AIOverViewAboutProjects";
 import AllMetaDescription from "./AllMetaDescription";
 
 interface QandA1 {
@@ -8,6 +9,13 @@ interface QandA1 {
 }
 
 const metaData: QandA1[] = [
+  {
+    question: "Anamnesis",
+    answer:
+      "A project created using Nextjs  Next.js–based application designed for repetitive problem solving, combining daily reminders,progress tracking, and centralized organization of tasks and problems in a single workflow",
+    bc: "Anamnesis",
+    linkTo: "https://github.com/NithishMR/leetcode-recurse",
+  },
   {
     question: "Asynchronous Email Job Queue System",
     answer:
@@ -52,6 +60,9 @@ function Projects() {
         <div className="text-base text-gray-400">
           About {metaData.length} Results (0.69 seconds)
         </div>
+      </div>
+      <div className="w-[70%] m-auto">
+        <AIOverViewAboutProjects />
       </div>
       <div className="w-[70%] m-auto ">
         <AllMetaDescription data={metaData} />

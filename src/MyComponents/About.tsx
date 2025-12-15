@@ -1,8 +1,7 @@
-"use client";
-
 import Accord from "@/MyComponents/Accord";
 import AllMetaDescription from "@/MyComponents/AllMetaDescription";
 import MetaDescription from "@/MyComponents/MetaDescription";
+import AIOverView from "./AIOverview";
 
 interface QandA {
   question: string;
@@ -119,7 +118,9 @@ export default function About() {
           About {metaData.length} Results (0.69 seconds)
         </div>
       </div>
-
+      <div className="w-[70%] m-auto pt-4 pb-2">
+        <AIOverView />
+      </div>
       {/* Intro / MetaDescription */}
       <div className="">
         <MetaDescription data={metaData1} />

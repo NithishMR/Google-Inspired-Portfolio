@@ -1,6 +1,5 @@
-"use client";
-
 import AllMetaDescription from "@/MyComponents/AllMetaDescription";
+import AIOverView from "./AIOverViewAboutMe";
 
 interface QandA1 {
   question: string;
@@ -29,6 +28,9 @@ const metaData: QandA1[] = [
 export default function AboutMe() {
   return (
     <div className="w-[70%] m-auto flex flex-col gap-8 py-6">
+      <div className="">
+        <AIOverView />
+      </div>
       <AllMetaDescription data={metaData} />
     </div>
   );

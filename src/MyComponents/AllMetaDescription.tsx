@@ -1,5 +1,3 @@
-"use client";
-
 import BreadCrumbMeta from "./BreadCrumbMeta";
 
 interface MetaDescription {

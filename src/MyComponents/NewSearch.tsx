@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import AccountDetails from "./AccountDetails";
 import SearchBar from "./SearchBar";

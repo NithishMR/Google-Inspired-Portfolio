@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import {
@@ -35,10 +33,10 @@ const BreadCrumbMeta: React.FC<MetaDescriptionProps> = ({ data }) => {
 
           <BreadcrumbItem>
             <Link
-              href=" https://9fe8aed1.google-inspired-portfolio.pages.dev/"
+              href="https://google-inspired-portfolio.pages.dev/"
               className="text-gray-500"
             >
-              https://9fe8aed1.google-inspired-portfolio.pages.dev/
+              https://google-inspired-portfolio.pages.dev/
             </Link>
           </BreadcrumbItem>
 

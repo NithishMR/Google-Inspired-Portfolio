@@ -1,3 +1,4 @@
+import AIOverViewSocial from "./AIOverViewOnSocial";
 import AllMetaDescription from "./AllMetaDescription";
 
 interface QandA1 {
@@ -22,6 +23,13 @@ const metaData: QandA1[] = [
     bc: "Github",
     linkTo: "https://github.com/NithishMR/",
   },
+  {
+    question: "CSSBattle",
+    answer:
+      "I invite you to view my CSSBattle.dev site profile where I solve  css problems on regular basis",
+    bc: "CssBattle.dev",
+    linkTo: "https://cssbattle.dev/player/nithishmr",
+  },
 ];
 
 export default function Social() {
@@ -31,6 +39,9 @@ export default function Social() {
         <div className="text-base text-gray-400">
           About {metaData.length} Results (0.69 seconds)
         </div>
+      </div>
+      <div className="w-[70%] m-auto ">
+        <AIOverViewSocial />
       </div>
       <div className="w-[70%] m-auto ">
         <AllMetaDescription data={metaData} />
